@@ -1,0 +1,24 @@
+program soal_kedua;
+uses crt;
+var
+    i, a : integer;
+
+begin
+clrscr;
+for i := 1 to 5 do
+begin 
+    if i mod 2 = 1 then 
+    begin
+        for a := 1 to i do
+        write ('* ');
+    end
+    else 
+    begin
+        for a := 1 to (i) do
+            write (i,' ');
+    end;
+    
+    writeln('');   
+
+    end;
+end.
