@@ -1,0 +1,28 @@
+
+program soal_pertama;
+uses crt;
+var
+    a ,b, i, jumlah: integer;
+
+begin   
+    clrscr;
+    write ('masukkan niali n : '); readln(a);
+    writeln ('');
+
+    for b := a downto 1 do
+    begin
+        jumlah := 0;
+
+        for i := 1 to b do
+        begin
+            write(i);
+            if i < b then
+            begin
+                write(' + ');
+            end;  
+            jumlah := jumlah + i;    
+        end;
+        writeln(' = ',jumlah);
+    end;
+
+end.
